@@ -1,7 +1,7 @@
 require('dotenv').config()
 const express = require ('express');
 const fileRoute = require('./routes/fileRoute');
-const usersRoute = require('./routes/usersRoute');
+const usersRoute = require('./server/routes/usersRoute');
 
 /*дб*/
 //const Sequelize = require('sequelize');

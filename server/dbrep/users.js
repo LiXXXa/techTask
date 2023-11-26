@@ -8,8 +8,16 @@ module.exports = function (sequelize) {
             primaryKey: true
         },
         password: {
-            type: Sequelize.STRING(255),
-            unique: true
+            type: Sequelize.STRING(255)
+        },
+        bearer_token: {
+            type: Sequelize.STRING(255)
+        },
+        refresh_token: {
+            type: Sequelize.STRING(255)
+        },
+        uuid: {
+            type: Sequelize.STRING(255)
         }
     }, {
         tableName: 'users',
